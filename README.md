@@ -32,10 +32,6 @@
         .task h2 {
             margin-top: 0;
         }
-        ol {
-            margin: 0;
-            padding-left: 20px;
-        }
     </style>
 </head>
 <body>
@@ -46,136 +42,120 @@
     
     <div class="task">
         <h2>Task-1</h2>
-        <ol>
-            <li><code>mkdir MyDirectory</code></li>
-            <li><code>cd MyDirectory</code></li>
-            <li><code>touch MyFile.txt</code></li>
-            <li><code>ls</code></li>
-        </ol>
+        <pre><code>mkdir MyDirectory
+cd MyDirectory
+touch MyFile.txt
+ls</code></pre>
     </div>
 
     <div class="task">
         <h2>Task-2</h2>
-        <ol>
-            <li><code>cp task_1/MyDirectory task_2</code></li>
-            <li><code>cd task_2</code></li>
-            <li><code>mkdir SecondDirectory</code></li>
-            <li><code>cp MyDirectory/*.txt /SecondDirectory</code></li>
-        </ol>
+        <pre><code>cp task_1/MyDirectory task_2
+cd task_2
+mkdir SecondDirectory
+cp MyDirectory/*.txt /SecondDirectory</code></pre>
     </div>
 
     <div class="task">
         <h2>Task-3</h2>
-        <ol>
-            <li><code>touch keyword.sh</code></li>
-            <li><code>chmod +x keyword.sh</code></li>
-            <li><code>./keyword.sh</code></li>
-        </ol>
+        <pre><code>touch keyword.sh
+chmod +x keyword.sh
+./keyword.sh</code></pre>
     </div>
 
     <div class="task">
         <h2>Task-4</h2>
-        <ol>
-            <li><code>mkdir archive</code></li>
-            <li><code>touch archive/1.txt archive/2.txt</code></li>
-            <li><code>mkdir archive/archive2</code></li>
-            <li><code>touch archive/archive2/3.txt</code></li>
-            <li><code>tar -cvf archive.tar archive</code></li>
-            <li><code>tar -xvf archive.tar -C archive_new</code></li>
-        </ol>
+        <pre><code>mkdir archive
+touch archive/1.txt archive/2.txt
+mkdir archive/archive2
+touch archive/archive2/3.txt
+
+tar -cvf archive.tar archive
+tar -xvf archive.tar -C archive_new</code></pre>
     </div>
 
     <div class="task">
         <h2>Task-5</h2>
-        <ol>
-            <li><code>cd task_5</code></li>
-            <li><code>touch text.txt</code></li>
-            <li><code>nano text.txt</code></li>
-            <li><code>touch line.sh</code></li>
-            <li><code>nano line.sh</code></li>
-            <li><code>chmod +x line.sh</code></li>
-            <li><code>./line.sh</code></li>
-            <li>Введите название файла: <code>text.txt</code></li>
-            <li>Вывод: <code>dlrow olleH</code></li>
-            <li>Вывод: <code>kisA si eman yM</code></li>
-        </ol>
+        <pre><code>cd task_5
+touch text.txt
+nano text.txt
+touch line.sh
+nano line.sh
+chmod +x line.sh
+./line.sh
+Введите название файла: text.txt
+dlrow olleH
+kisA si eman yM</code></pre>
     </div>
 
     <div class="task">
         <h2>Task-6</h2>
-        <ol>
-            <li><code>mkdir main</code></li>
-            <li><code>mkdir backup</code></li>
-            <li><code>touch main/1.txt</code></li>
-            <li><code>touch create_backup.sh</code></li>
-            <li><code>nano create_backup.sh</code></li>
-            <li><code>chmod +x create_backup.sh</code></li>
-            <li><code>./create_backup.sh</code></li>
-            <li>Введите директорию для резервного копирования: <code>/home/asik/Jusan/task_6/main</code></li>
-            <li>Выберите единицу времени для резервного копирования:</li>
-            <ol type="1">
-                <li>День</li>
-                <li>Неделя</li>
-                <li>Месяц</li>
-            </ol>
-            <li>Введите интервал в днях (например, 1-7): <code>5</code></li>
-            <li>Резервная копия создана: <code>/home/asik/Jusan/task_6/backup/backup_20240801_193128.tar.gz</code></li>
-            <li>Cron задача установлена: <code>0 0 */5 * * /bin/bash /home/asik/Jusan/task_6/create_backup.sh</code></li>
-            <li><code>crontab -l</code></li>
-            <li>Вывод: <code>0 0 */5 * * /bin/bash /home/asik/Jusan/task_6/create_backup.sh</code></li>
-        </ol>
+        <pre><code>mkdir main
+mkdir backup
+touch main/1.txt
+touch create_backup.sh
+nano create_backup.sh
+chmod +x create_backup.sh
+./create_backup.sh
+Введите директорию для резервного копирования:
+/home/asik/Jusan/task_6/main
+Выберите единицу времени для резервного копирования:
+1 - День
+2 - Неделя
+3 - Месяц
+1
+Введите интервал в днях (например, 1-7):
+5
+Резервная копия создана: /home/asik/Jusan/task_6/backup/backup_20240801_193128.tar.gz
+Cron задача установлена: 0 0 */5 * * /bin/bash /home/asik/Jusan/task_6/create_backup.sh
+Скрипт завершен.
+crontab -l
+
+0 0 */5 * * /bin/bash /home/asik/Jusan/task_6/create_backup.sh</code></pre>
     </div>
 
     <div class="task">
         <h2>Task-7</h2>
-        <ol>
-            <li><code>touch counter.sh</code></li>
-            <li><code>touch 1.txt</code></li>
-            <li><code>echo "Hello world! My name is Aslanbek. I love IT, and I work in IT at Beeline and ITCSoft company. I wanna learn something new" > 1.txt</code></li>
-            <li><code>nano counter.sh</code></li>
-            <li><code>chmod +x counter.sh</code></li>
-            <li><code>./counter.sh</code></li>
-            <li>Введите название текстового файла: <code>1.txt</code></li>
-            <li>Количество слов в файле <code>1.txt</code>: <code>24</code></li>
-        </ol>
+        <pre><code>touch counter.sh
+touch 1.txt
+echo "Hello world! My name is Aslanbek. I love IT, and I work in IT at Beeline and ITCSoft company. I wanna learn something new" > 1.txt
+nano counter.sh
+chmod +x counter.sh
+./counter.sh
+Введите название текстового файла: 1.txt
+Количество слов в файле '1.txt': 24</code></pre>
     </div>
 
     <div class="task">
         <h2>Task-8</h2>
-        <ol>
-            <li><code>cd task_8</code></li>
-            <li><code>touch create_password.sh</code></li>
-            <li><code>nano create_password.sh</code></li>
-            <li><code>chmod +x create_password.sh</code></li>
-        </ol>
+        <pre><code>cd task_8
+touch create_password.sh
+nano create_password.sh
+chmod +x create_password.sh</code></pre>
     </div>
 
     <div class="task">
         <h2>Task-9</h2>
-        <ol>
-            <li><code>cd task_9</code></li>
-            <li><code>touch counter.sh</code></li>
-            <li><code>nano counter.sh</code></li>
-            <li><code>chmod +x counter.sh</code></li>
-            <li><code>./counter.sh</code></li>
-            <li>Количество файлов: <code>1</code></li>
-            <li>Количество директорий: <code>0</code></li>
-            <li><code>ls</code></li>
-            <li>Вывод: <code>counter.sh</code></li>
-        </ol>
+        <pre><code>cd task_9
+touch counter.sh
+nano counter.sh
+chmod +x counter.sh
+./counter.sh
+Количество файлов: 1
+Количество директорий: 0
+ls
+counter.sh</code></pre>
     </div>
 
     <div class="task">
         <h2>Task-10</h2>
-        <ol>
-            <li><code>cd task_10</code></li>
-            <li><code>touch update.sh</code></li>
-            <li><code>nano update.sh</code></li>
-            <li><code>chmod +x update.sh</code></li>
-            <li><code>./update.sh</code></li>
-            <li>Обновляем список доступных пакетов</li>
-            <li>[sudo] пароль для asik:</li>
-        </ol>
+        <pre><code>cd task_10
+touch update.sh
+nano update.sh
+chmod +x update.sh
+./update.sh
+Обновляем список доступных пакетов
+[sudo] пароль для asik:</code></pre>
     </div>
 </body>
 </html>
