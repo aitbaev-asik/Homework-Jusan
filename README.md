@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>README</title>
+    <title>Задания</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
+        }
+        h1 {
             color: #333;
         }
-        h1, h2 {
-            color: #2c3e50;
-        }
         code {
-            background-color: #f4f4f4;
+            background: #f4f4f4;
             padding: 2px 4px;
             border-radius: 4px;
-            font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            font-size: 1.1em;
         }
         pre {
-            background-color: #f4f4f4;
+            background: #f4f4f4;
             padding: 10px;
             border-radius: 4px;
             overflow-x: auto;
@@ -30,16 +29,17 @@
             margin-bottom: 20px;
         }
         .task h2 {
-            margin-top: 0;
+            color: #555;
         }
     </style>
 </head>
 <body>
     <h1>Добрый день!</h1>
     <p>В данном репозитории я расписал 10 заданий, все загружено в виде результата того, что получилось.</p>
-    <p><strong>Некоторые скрипты не будут работать на вашем компьютере, так как я указал статичные директории в некоторых местах. Это нормальная практика, так как все инструменты имеют свою директорию. Обычно в /etc/, а много логов в /var/</strong></p>
-    <p><strong>Дистрибутив на котором я работал - Ubuntu 22.04 версии. Для 10 задачи, если вы работаете в CentOS 8, замените apt на dnf, а если в CentOS 7 и ниже, то на yum.</strong></p>
-    
+    <p><strong>Некоторые скрипты не будут работать на вашем компьютере, так как я указал статичные директории в некоторых местах. Это нормальная практика так как все инструменты имеют свою директорию. Обычно в /etc/, а много логов в /var/</strong></p>
+    <p><strong>Дистрибутива на котором я работал ubuntu 22.04 версии - для 10 задачи, видел в компаниях CentOS. Если версия 8, замените apt на dnf, а если 7 версии и ниже, то yum.</strong></p>
+    <p>Более подробно какие команды я писал в каждом таске распишу здесь:</p>
+
     <div class="task">
         <h2>Task-1</h2>
         <pre><code>mkdir MyDirectory
